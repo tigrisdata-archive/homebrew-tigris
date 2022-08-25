@@ -8,7 +8,6 @@ class TigrisCli < Formula
 
   depends_on "make" => :build
   depends_on "go" => :build
-  depends_on "docker"
 
   def install
     system "make"
