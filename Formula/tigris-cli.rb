@@ -4,7 +4,7 @@ class TigrisCli < Formula
   license "Apache 2.0"
   head "https://github.com/tigrisdata/tigris-cli.git", branch: "alpha"
   url "https://github.com/tigrisdata/tigris-cli.git",
-    tag:      "v1.0.0-alpha.15"
+    tag:      "v1.0.0-alpha.18"
 
   depends_on "make" => :build
   depends_on "go" => :build
