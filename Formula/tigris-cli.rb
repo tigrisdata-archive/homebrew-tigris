@@ -11,7 +11,7 @@ class TigrisCli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.4/tigris_1.0.0-beta.4_darwin_arm64.tar.gz"
-      sha256 "60bd262d47472b9229cef08f2f71b759b576ee4843312bb16793d716cbe98096"
+      sha256 "a8c481e06615b45b3def860685042f425b59150379e63b3ef8c1f4d4c1badc2f"
 
       def install
         bin.install "tigris"
@@ -19,7 +19,7 @@ class TigrisCli < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.4/tigris_1.0.0-beta.4_darwin_amd64.tar.gz"
-      sha256 "e4f7f81596e64f03d904efeae771ff001d76b51f8a396509bde5febad2f53806"
+      sha256 "243adfbe248c15fae714b77848e3b48c1587b63708a547f6a44ceebca2e517e9"
 
       def install
         bin.install "tigris"
@@ -30,7 +30,7 @@ class TigrisCli < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.4/tigris_1.0.0-beta.4_linux_arm64.tar.gz"
-      sha256 "e25a9b46f6c4057a24ee523396211bba1fe42d92702d6dd5f79bd4ae6308d982"
+      sha256 "29aaa707ea47c7157cf1e62c604cd9d018fffd180e85f5bf425fc6c429a2e9a3"
 
       def install
         bin.install "tigris"
@@ -38,7 +38,7 @@ class TigrisCli < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.4/tigris_1.0.0-beta.4_linux_amd64.tar.gz"
-      sha256 "4d7123870b042197eb85b97dc47acbb737d5a3ad95b62acdb7dfa304fbed9e28"
+      sha256 "50c647240b2de4e1c99892372f58d4284058de23153575f2fa84acd73c18aad0"
 
       def install
         bin.install "tigris"
