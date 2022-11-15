@@ -5,13 +5,13 @@
 class TigrisCli < Formula
   desc "Tigris is a modern, scalable backend for building real-time websites and apps."
   homepage "https://docs.tigrisdata.com"
-  version "1.0.0-beta.10"
+  version "1.0.0-beta.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.10/tigris_1.0.0-beta.10_darwin_arm64.tar.gz"
-      sha256 "2e51829717022abc1874174c150310ff8b5afc812570b7a6d65457ff5bac140c"
+      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.11/tigris_1.0.0-beta.11_darwin_arm64.tar.gz"
+      sha256 "519d1e19f25325b97e30a0f8fc43a73e4634eb5087155d8c3dfeb09b135b9049"
 
       def install
         bin.install "tigris"
@@ -21,8 +21,8 @@ class TigrisCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.10/tigris_1.0.0-beta.10_darwin_amd64.tar.gz"
-      sha256 "10a400cd3f4096957232bceaa70dcea94249dbeb9a0e32ecb4a0d36227bbf35c"
+      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.11/tigris_1.0.0-beta.11_darwin_amd64.tar.gz"
+      sha256 "27367c3a699d0a677b264cc7c11c891318b24a153efb072c66480e07b91e84b2"
 
       def install
         bin.install "tigris"
@@ -35,8 +35,8 @@ class TigrisCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.10/tigris_1.0.0-beta.10_linux_arm64.tar.gz"
-      sha256 "d349011d87b7837834169806a6b446c65cc48e247112ed21e145ec96495791a1"
+      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.11/tigris_1.0.0-beta.11_linux_arm64.tar.gz"
+      sha256 "02bf3a0fde6a99b90148bbf4d2e07533b349ac511128527ecb799a3f2dea23f2"
 
       def install
         bin.install "tigris"
@@ -46,8 +46,8 @@ class TigrisCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.10/tigris_1.0.0-beta.10_linux_amd64.tar.gz"
-      sha256 "5f064d820c98e3017fd8eadf4005597555e06376b99200d14aa6a0d28079c225"
+      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.11/tigris_1.0.0-beta.11_linux_amd64.tar.gz"
+      sha256 "dec41e72c4dee4e0caaf38daba648b17d281b60fa5e05f0ca63ad416d4788a4b"
 
       def install
         bin.install "tigris"
