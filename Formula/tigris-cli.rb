@@ -11,7 +11,7 @@ class TigrisCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.14/tigris_1.0.0-beta.14_darwin_amd64.tar.gz"
-      sha256 "65b4948b978005c8c7e389fab4abf21ec2f85ddc8181ed9023deeac24979942a"
+      sha256 "0b4fa21e58b13b4eb025cc749b7875fc90ad1e002f71da7db5604dbe5ccfe13f"
 
       def install
         bin.install "tigris"
@@ -22,7 +22,7 @@ class TigrisCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.14/tigris_1.0.0-beta.14_darwin_arm64.tar.gz"
-      sha256 "c2edcd0c28e4b39f85a540464d0350be3dd531f01485f7ef14c5da2be1ab558e"
+      sha256 "94ee829cf79f9905119cd51921afbf7a4d2bcf326a3bb859df664936acffd716"
 
       def install
         bin.install "tigris"
@@ -34,9 +34,9 @@ class TigrisCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.14/tigris_1.0.0-beta.14_linux_amd64.tar.gz"
-      sha256 "e8b96ee55bc0826af4af92bacd28baefaa4c28c6e5aff98716a27dbd7574c38d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.14/tigris_1.0.0-beta.14_linux_arm64.tar.gz"
+      sha256 "379240d215489725c1ca3286ee30e725162bba9f950a3504757c5446269c0a83"
 
       def install
         bin.install "tigris"
@@ -45,9 +45,9 @@ class TigrisCli < Formula
         fish_completion.install "completion/fish/tigris"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.14/tigris_1.0.0-beta.14_linux_arm64.tar.gz"
-      sha256 "1de3f33eaf9e23f8219af9ad9c2a781d0b9c68b46eb511721d78d951b21709ce"
+    if Hardware::CPU.intel?
+      url "https://github.com/tigrisdata/tigris-cli/releases/download/v1.0.0-beta.14/tigris_1.0.0-beta.14_linux_amd64.tar.gz"
+      sha256 "ada38db0627bcaa802dff855736b3ae8926fe9e78f3b0c7512eb332d0d45d8f9"
 
       def install
         bin.install "tigris"
